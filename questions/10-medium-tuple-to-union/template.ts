@@ -1,1 +1,1 @@
-type TupleToUnion<T> = any
+type TupleToUnion<T extends readonly (string | number | symbol | boolean)[]> = T[number]
